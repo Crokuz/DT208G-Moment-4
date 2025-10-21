@@ -1,0 +1,25 @@
+th {
+    line-height: 2em;
+    border-bottom: 1px solid gainsboro;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+}
+
+th:hover {
+    background-color: gainsboro;
+}
+
+th, td {
+    padding: 0.3em 2em 0.3em 0;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+  border-collapse: collapse;
+}

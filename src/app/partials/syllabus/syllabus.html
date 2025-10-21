@@ -1,0 +1,35 @@
+<h2>Ramschema</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th (click)="sortBy('code')">
+        Kurskod
+        <span *ngIf="sortColumn === 'code'">
+          {{ sortDirection === 'asc' ? '▼' : '▲' }}
+        </span>
+      </th>
+      <th (click)="sortBy('coursename')">
+        Namn
+        <span *ngIf="sortColumn === 'coursename'">
+          {{ sortDirection === 'asc' ? '▼' : '▲' }}
+        </span>
+      </th>
+      <th (click)="sortBy('progression')">
+        Progression
+        <span *ngIf="sortColumn === 'progression'">
+          {{ sortDirection === 'asc' ? '▼' : '▲' }}
+        </span>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let course of syllabus">
+      <td>{{ course.code }}</td>
+      <td>{{ course.coursename }}</td>
+      <td>{{ course.progression }}</td>
+    </tr>
+  </tbody>
+</table>
+
