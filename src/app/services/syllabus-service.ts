@@ -1,3 +1,10 @@
+/*
+Författare: Leander Norberg
+Projketnamn: Moment 4
+Beskrivning: Praktisk laboration utvecklat i samband med kursen 
+Programmering i TypeScript (DT208G ) vid mittuniversitetet, VT2025 
+*/
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -11,7 +18,7 @@ export class SyllabusService {
 
     constructor(private http: HttpClient) {}
 
-    //Hämta ramschema
+    //Hämtar ramschema
     getSyllabus(): Observable<Course[]> {
         return this.http.get<Course[]>(this.url);
     }

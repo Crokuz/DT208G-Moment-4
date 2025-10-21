@@ -23,3 +23,16 @@ table {
 table, th, td {
   border-collapse: collapse;
 }
+
+label {
+    line-height: 2em;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 25vw;
+  padding: 0.6em;
+  margin-bottom: 2em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
