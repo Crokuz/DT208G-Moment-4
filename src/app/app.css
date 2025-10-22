@@ -1,6 +1,6 @@
 /*
 Författare: Leander Norberg
-Projketnamn: Moment 4
+Projektnamn: Moment 4
 Beskrivning: Praktisk laboration utvecklat i samband med kursen 
 Programmering i TypeScript (DT208G ) vid mittuniversitetet, VT2025 
 */
@@ -38,13 +38,6 @@ main {
     flex: 1;
     width: 100%;
     padding: 5em 0em;
-}
-
-#headerWrapper {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    gap: 3em;
 }
 
 main, #headerWrapper {
