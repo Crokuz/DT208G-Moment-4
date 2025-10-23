@@ -13,6 +13,7 @@ import { Course } from '../models/course';
 @Injectable({
   providedIn: 'root'
 })
+
 export class SyllabusService {
     private url: string = "https://webbutveckling.miun.se/files/ramschema.json";
 
